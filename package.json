@@ -1,0 +1,22 @@
+{
+  "name": "cchalrazki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CameronC17/-EHD-CaptainCam-vs-d.razKi-1v1-on-mp_shipment.git"
+  },
+  "author": "swaglords",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CameronC17/-EHD-CaptainCam-vs-d.razKi-1v1-on-mp_shipment/issues"
+  },
+  "homepage": "https://github.com/CameronC17/-EHD-CaptainCam-vs-d.razKi-1v1-on-mp_shipment#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
