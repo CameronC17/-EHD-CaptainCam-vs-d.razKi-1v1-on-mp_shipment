@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
 
 var myPort = 3000 || process.env.PORT;
 
@@ -12,6 +13,12 @@ var users = [
   "age" : 69}
 ]
 
+//app user things
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(bodyParser.json());
+
 //routers
 app.get("/", function(req, res, next) {
   res.send("default users brav");
@@ -23,6 +30,11 @@ app.get("/users", function(req, res, next) {
 
 app.get("/users/:id", function(req, res, next) {
   res.send(users[req.params.id]);
+});
+
+app.post("/users", function(req, res, next) {
+  users.push({'name' : req.body.name, 'age' : req.body.age});
+  res.redirect("/users");
 });
 
 

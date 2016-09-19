@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CameronC17/-EHD-CaptainCam-vs-d.razKi-1v1-on-mp_shipment#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0"
   }
 }
